@@ -1,0 +1,32 @@
+{
+  "name": "security",
+  "description": "General security recipes",
+  "long_description": "",
+  "maintainer": "YOUR_COMPANY_NAME",
+  "maintainer_email": "YOUR_EMAIL",
+  "license": "none",
+  "platforms": {
+  },
+  "dependencies": {
+    "sshd": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "security::sshd": "Sets up no password access",
+    "security::iptables": "Sets up 80 and 22 ports only"
+  },
+  "version": "0.0.1"
+}

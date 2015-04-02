@@ -1,0 +1,28 @@
+en:
+  http_challenge: "Restricted Access"
+  branding:
+    header:
+      logo: Testground
+  users:
+    login: 'Sign in'
+    logout: 'Sign out'
+    sign_up: 'Sign up'
+    update_details: 'Update details'
+    new_password: 'New password'
+    confirm_new_password: 'Confirm new password'
+    change_password: 'Change password'
+    password: 'Password'
+    send_reset_password_instructions: 'Send reset password instructions'
+    resend_confirmation_instructions: 'Resend confirmation instructions'
+    resend_unlock_instructions: 'Resend unlock account instructions'
+    confirm_account: 'Confirm my account'
+    unlock_account: 'Unlock my account'
+    forgotten_password: 'Forgotten your password?'
+    resend_confirmation_instructions_link: "Didn't receive confirmation instructions?"
+    resend_unlock_instructions_link: "Didn't receive unlock instructions?"
+    login_oauth: 'Sign in with %{provider}'
+    password_minimum: '%{min} characters minimum'
+    edit_details: 'Edit Details'
+    forgot_password: 'Forgot Password?'
+  home:
+    title: 'Welcome to the Testground!'

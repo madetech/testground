@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "ssh_user": {
+      "path": "."
+    },
+    "user": {
+      "locked_version": "0.3.0"
+    },
+    "ssh-util": {
+      "locked_version": "0.6.3"
+    }
+  }
+}

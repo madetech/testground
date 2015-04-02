@@ -1,0 +1,46 @@
+source 'https://rubygems.org'
+ruby '2.2.1'
+
+gem 'asset_sync',                     '1.1.0'
+gem 'compass-rails',                  '2.0.4'
+gem 'dalli',                          '2.7.2'
+gem 'devise'
+gem 'jquery-rails',                   '4.0.3'
+gem 'libv8',                          '3.16.14.7'
+gem 'mysql2',                         '0.3.16'
+gem 'newrelic_rpm',                   '3.11.0.283'
+gem 'puma',                           '2.11.0'
+gem 'rails',                          '4.2.0'
+gem 'sass-rails',                     '5.0.1'
+gem 'therubyracer',                   '0.12.1'
+gem 'turbolinks',                     '2.2.3'
+gem 'uglifier',                       '2.5.3'
+gem 'unf',                            '0.1.4'
+
+group :development do
+  gem 'better_errors',                '~> 1.1.0'
+  gem 'bullet',                       '~> 4.14.2'
+  gem 'pry-rails',                    '~> 0.3.3'
+  gem 'quiet_assets',                 '~> 1.1.0'
+  gem 'rack-mini-profiler',           '~> 0.9.2'
+  gem 'spring',                       '~> 1.2.0'
+  gem 'spring-commands-rspec',        '~> 1.0.2'
+end
+
+group :test do
+  gem 'brakeman'                      # Always latest
+  gem 'cane',                         '~> 2.6.2'
+  gem 'capybara',                     '~> 2.4.1'
+  gem 'factory_girl',                 '~> 4.5.0'
+  gem 'ffaker',                       '~> 1.32.1'
+  gem 'rspec',                        '~> 3.2.0'
+  gem 'rspec-its',                    '~> 1.0.1'
+  gem 'rspec-rails',                  '~> 3.2.1'
+  gem 'rspec_junit_formatter',        '~> 0.2.0'
+  gem 'scss-lint',                    '~> 0.7.0'
+  gem 'simplecov',                    '~> 0.9.0'
+  gem 'simplecov-rcov',               '~> 0.2.3'
+  gem 'tailor',                       '~> 1.4.1'
+  gem 'vcr',                          '~> 2.9.2'
+  gem 'webmock',                      '~> 1.19.0'
+end

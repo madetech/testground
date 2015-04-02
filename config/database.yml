@@ -1,0 +1,15 @@
+mysql: &mysql
+  adapter: mysql2
+  encoding: utf8
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: root
+
+development:
+  <<: *mysql
+  database: testground_dev
+
+test: &test
+  <<: *mysql
+  database: testground_test

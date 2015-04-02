@@ -1,0 +1,9 @@
+<div class="flash_messages">
+  <% %i(notice alert success error).each do |flash_type| %>
+    <% if flash[flash_type].present? %>
+      <div class="flash_messages__message--<%= flash_type %>">
+        <div class="flash_messages__message_inner"><%= flash[flash_type] %></div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

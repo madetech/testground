@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'sudo'
+cookbook 'git'
+cookbook 'ssh_user'
+cookbook 'user'
+cookbook 'sshd'
+cookbook 'iptables'
+cookbook 'ruby_build', git: 'https://github.com/fnichol/chef-ruby_build'
+cookbook 'rbenv', git: 'https://github.com/fnichol/chef-rbenv.git'
+cookbook 'imagemagick'
+cookbook 'mysql', '6.0.13'
+cookbook 'hostname', '0.3.0'
+cookbook 'jenkins', '2.2.1'
+cookbook 'nginx', '2.7.6'
+cookbook 'phantomjs', '1.0.3'
+cookbook 'postfix', '3.6.2'
+cookbook 'build-essential', '~> 2.2.1'
+cookbook 'python', '1.4.6'

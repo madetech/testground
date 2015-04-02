@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= t('branding.header.logo') %></title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'flash/messages' %>
+
+    <div class="page">
+      <header class="page__header">
+        <%= render 'branding/header' %>
+        <%= render 'users/bar' %>
+      </header>
+
+      <div class="page__content">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

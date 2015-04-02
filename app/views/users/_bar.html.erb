@@ -1,0 +1,9 @@
+<div class="user_bar">
+  <% if user_signed_in? %>
+    <%= link_to current_user.email, edit_user_registration_path %>
+    <%= link_to t('users.logout'), destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to t('users.login'), new_user_session_path %>
+    <%= link_to t('users.sign_up'), new_user_registration_path %>
+  <% end %>
+</div>

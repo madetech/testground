@@ -1,0 +1,26 @@
+.flash_messages {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+%flash_messages__message {
+  text-align: center;
+  line-height: 2em;
+}
+
+.flash_messages__message--success {
+  @extend %flash_messages__message;
+  background: green;
+}
+
+.flash_messages__message--alert,
+.flash_messages__message--error {
+  @extend %flash_messages__message;
+  background: red;
+}
+
+.flash_messages__message--notice {
+  @extend %flash_messages__message;
+  background: yellow;
+}

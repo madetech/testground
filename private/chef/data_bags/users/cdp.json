@@ -1,0 +1,6 @@
+{
+  "id"        : "cdp",
+  "comment"   : "CDP",
+  "home"      : "/home/cdp",
+  "ssh_keygen": false
+}

@@ -1,0 +1,57 @@
+{
+  "name": "cdp",
+  "json_class": "Chef::Role",
+  "description": "Role used for installing core CDP dependencies",
+  "run_list": [
+    "recipe[user::data_bag]",
+    "recipe[mysql::mysql_service]",
+    "recipe[ruby_build]",
+    "recipe[rbenv::user]",
+    "recipe[imagemagick]",
+    "recipe[imagemagick::devel]",
+    "recipe[nginx]",
+    "recipe[nginx::server_config]",
+    "recipe[iptables]",
+    "recipe[ssh_user::data_bag]",
+    "recipe[security::sshd]",
+    "recipe[security::iptables]",
+    "recipe[security::remove_id_rsa_pub]",
+    "recipe[git]",
+    "recipe[security::iptables_dev]",
+    "recipe[build-essential]",
+    "recipe[python]",
+    "recipe[littlechef]",
+    "recipe[rbenv::vagrant]",
+    "recipe[phantomjs]"
+  ],
+  "default_attributes": {
+    "ruby_build": {
+      "upgrade": "sync"
+    },
+    "rbenv": {
+      "user_rubies": ["2.2.1"],
+      "user_gems": {
+        "2.2.1": [{"name": "bundler"}]
+      },
+      "user_installs": [
+        {
+          "user": "vagrant",
+          "global": "2.2.1"
+        }
+      ]
+    },
+    "nginx": {
+      "default_site_enabled": false
+    },
+    "applications": {
+      "development": {
+        "env": "development",
+        "server_names": ["dev.testground.net"],
+        "path": "/home/testground/development"
+      }
+    },
+    "phantomjs": {
+      "version": "1.9.1"
+    }
+  }
+}
