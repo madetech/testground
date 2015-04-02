@@ -11,7 +11,7 @@ Please make sure the following dependencies are installed on your machine.
 
 ## Quickstart
 
-*Windows users: You will need to follow [this guide](https://github.com/CDPworldwide/Playground/blob/master/WINDOWS.md) first.*
+*Windows users: You will need to follow [this guide](https://bitbucket.org/DrPheltRight/testground/src/master/WINDOWS.md) first.*
 
  1. Install the Vagrant omnibus plugin with `vagrant plugin install vagrant-omnibus`
  2. Bootup vagrant with `vagrant up` (will take a while the first time)
