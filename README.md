@@ -17,7 +17,7 @@ Please make sure the following dependencies are installed on your machine.
  2. Bootup vagrant with `vagrant up` (will take a while the first time)
  3. SSH into vagrant with `vagrant ssh`
  4. Change into project dir with `cd /var/www`
- 5. Install dependencies with `bundle install` (if you get an "is not installed" error run `rbenv local 2.2.1` and try again)
+ 5. Install dependencies with `bundle install` (if you get an "is not installed" error run `rbenv local 2.2.3` and try again)
  7. Setup DB with `bundle exec rake db:setup`
  8. Start development server with `bundle exec rails s`
  9. Navigate to [http://localhost:3000](http://localhost:3000)
@@ -36,7 +36,6 @@ you're in the right place.
  3. Change into project dir with `cd /var/www`
  4. Start development server with `bundle exec rails s`
  5. Navigate to [http://localhost:3000](http://localhost:3000)
-
 
 ### Common tasks
 
