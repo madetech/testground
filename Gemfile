@@ -22,7 +22,6 @@ group :development do
   gem 'bullet',                       '~> 4.14.2'
   gem 'pry-rails',                    '~> 0.3.3'
   gem 'quiet_assets',                 '~> 1.1.0'
-  gem 'rack-mini-profiler',           '~> 0.9.2'
   gem 'spring',                       '~> 1.2.0'
   gem 'spring-commands-rspec',        '~> 1.0.2'
 end
