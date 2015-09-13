@@ -1,9 +1,8 @@
 {
-  "name": "cdp",
+  "name": "vagrant",
   "json_class": "Chef::Role",
-  "description": "Role used for installing core CDP dependencies",
+  "description": "Role used for installing rails dependencies",
   "run_list": [
-    "recipe[user::data_bag]",
     "recipe[mysql::mysql_service]",
     "recipe[ruby_build]",
     "recipe[rbenv::user]",
@@ -11,13 +10,7 @@
     "recipe[imagemagick::devel]",
     "recipe[nginx]",
     "recipe[nginx::server_config]",
-    "recipe[iptables]",
-    "recipe[ssh_user::data_bag]",
-    "recipe[security::sshd]",
-    "recipe[security::iptables]",
-    "recipe[security::remove_id_rsa_pub]",
     "recipe[git]",
-    "recipe[security::iptables_dev]",
     "recipe[build-essential]",
     "recipe[python]",
     "recipe[littlechef]",
@@ -29,14 +22,14 @@
       "upgrade": "sync"
     },
     "rbenv": {
-      "user_rubies": ["2.2.1"],
+      "user_rubies": ["2.2.3"],
       "user_gems": {
-        "2.2.1": [{"name": "bundler"}]
+        "2.2.3": [{"name": "bundler"}]
       },
       "user_installs": [
         {
           "user": "vagrant",
-          "global": "2.2.1"
+          "global": "2.2.3"
         }
       ]
     },
